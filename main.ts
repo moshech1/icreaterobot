@@ -2061,6 +2061,7 @@ namespace Microbit {
     //% speed.min=-255 speed.max=255
 
     //% subcategory=Movement
+    //% color=#1E6FD6
 
     export function MotorRun(index: enMotors, speed: number): void {
 
@@ -2134,6 +2135,7 @@ namespace Microbit {
     //% speed.min=-100 speed.max=100
 
     //% parts="SuperBit_runMotor" subcategory=Movement group="Servo Motor"
+    //% color=#1E6FD6
 
     export function runMotor(motoraddress: enMotorcolor, speed: number): void {
         speed = speed / 2
@@ -2177,6 +2179,7 @@ namespace Microbit {
     //% location.min=-360 location.max=360
 
     //% parts="writemotorlocation" subcategory=Movement group="Servo Motor"
+    //% color=#1E6FD6
 
     export function Writemotorlocation(motoraddress: enMotorcolor, speed: number, location: number): void {
         if (speed == 0) {
@@ -2240,6 +2243,7 @@ namespace Microbit {
     //% speed.min=-100 speed.max=100
     //% location.min=0 
     //% parts="writemotorrelativelocation" subcategory=Movement group="Servo Motor"
+    //% color=#1E6FD6
 
     export function Writemotorrelativelocation(motoraddress: enMotorcolor, speed: number, location: number): void {
         if (((location <= 5) && (location >= 0)) || ((location >= -5) && (location <= 0))) {
@@ -2296,6 +2300,7 @@ namespace Microbit {
     //% speed.min=-100 speed.max=100
 
     //% parts="writemotorrelativetime" subcategory=Movement group="Servo Motor"
+    //% color=#1E6FD6
 
     export function Writemotorrelativetime(motoraddress: enMotorcolor, speed: number, time: number): void {
 
@@ -2357,6 +2362,7 @@ namespace Microbit {
     //% speed2.min=-100 speed2.max=100
 
     //% parts="SuperBit_runDMotor" subcategory=Movement group="Servo Motor"
+    //% color=#1E6FD6
 
     export function runDMotor(speed1: number, speed2: number): void {
 
@@ -2408,6 +2414,7 @@ namespace Microbit {
     //% speed2.min=-100 speed2.max=100
     //% location.min=0 
     //% parts="writeDmotorlocation" subcategory=Movement group="Servo Motor"
+    //% color=#1E6FD6
 
     export function WriteDmotorlocation(speed1: number, speed2: number, location: number): void {
         if (((location <= 5) && (location >= 0)) || ((location >= -5) && (location <= 0))) {
@@ -2508,6 +2515,7 @@ namespace Microbit {
     //% speed2.min=-100 speed2.max=100
     //% time.min=0 
     //% parts="writeDmotortime" subcategory=Movement group="Servo Motor"
+    //% color=#1E6FD6
 
     export function writeDmotortime(speed1: number, speed2: number, time: number): void {
 
@@ -2600,6 +2608,7 @@ namespace Microbit {
     //% blockId=SuperBit_DMotor block="Set left motor to|%motoraddress1|and right motor to|%motoraddress2|"
 
     //% parts="SuperBit_DMotor" subcategory=Movement group="Servo Motor"
+    //% color=#1E6FD6
 
     export function DMotor(motoraddress1: enMotorcolor, motoraddress2: enMotorcolor): void {
         caraddress1 = motoraddress1
@@ -2613,6 +2622,7 @@ namespace Microbit {
     //% num.min=1 num.max=4 value.min=0 value.max=300
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=20
     //%  subcategory=Movement
+    //% color=#1E6FD6
     export function Servo4(num: enServo, value: number): void {
 
         // 50hz: 20,000 us
@@ -2625,6 +2635,7 @@ namespace Microbit {
     //% blockId="readmotorspeed" block="Read speed of the |%motoraddress|motor"
 
     //% parts="readmotorspeed" subcategory=Movement group="Servo Motor"
+    //% color=#1E6FD6
 
     export function Readmotorspeed(motoraddress: enMotorcolor): number {
 
@@ -2662,6 +2673,7 @@ namespace Microbit {
     //% blockId="readmotorlocation" block="Read position of the |%motoraddress|motor"
 
     //% parts="readmotorlocation" subcategory=Movement group="Servo Motor"
+    //% color=#1E6FD6
 
     export function Readmotorlocation(motoraddress: enMotorcolor): number {
 
@@ -2694,6 +2706,7 @@ namespace Microbit {
     //% expandableArgumentMode="toggle"
 
     //% subcategory=Movement
+    //% color=#1E6FD6
 
     export function motorFan(fanpin: Read_pin, fanstate: boolean, speed: number = 1023): void {
 
@@ -2764,6 +2777,7 @@ namespace Microbit {
     //% expandableArgumentMode="toggle"
 
     //% subcategory=Movement
+    //% color=#1E6FD6
 
     export function elecmagnet(elecpin: Write_pin, magState: boolean, force: number = 1023): void {
 
